@@ -53,7 +53,7 @@ def first_action():
 
 first_action()
 
-# I got rid of the while function and combined the if statements
+# I tweaked and moved around some stuff it works so far but I don't know if you want to add more
 
 
 def second_action():
