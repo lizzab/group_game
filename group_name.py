@@ -13,9 +13,26 @@ def roll():
     input("Enter: ")
     print(f"You rolled a {die}")
     if die == 1 or 3 or 5:
-        print("You missed your shot and you died!")
+        print("You missed your shot and the bear charges at you! Game Over!")
     else:
-        print("You hit your shot! Congrats you didn't die!")
+        print("You hit your shot! Congrats you won the game!")
+        print("Until next adventure!")
+
+
+def roll2():
+    die = random.randint(1,6)
+    print("""If the dice rolls an even number you hit your shot.
+    If the dice rolls an odd number you miss the shot and face the consequences!""")
+    input("Enter: ")
+    print(f"You rolled a {die}")
+    if die == 1 or 3 or 5:
+        print("""You missed your shot and the man gets scared off. 
+        You hear some twigs and brush shuffling around behind you.
+        A bear swats its giant claws at you. That is the last thing you see.""")
+    else:
+        print("""You hit your shot! The man falls.
+        You hear some twigs and brush shuffling around behind you.
+        A bear swats its giant claws at you. That is the last thing you see.""")
 
 
 print("Welcome to the B.J. Experience! The adventure game!")
@@ -71,14 +88,13 @@ def second_action():
         print("Game Over!")
     choice3 = int(input())
     if choice3 == 1:
-        print("You follow the man into the woods where you both spot the bear.")
+        print("You follow the man into the woods where you both spot the bear next to the cabin.")
         print("You aim in your rifle and take a shot")
-        print("")
         roll()
     elif choice3 == 2:
         print("You walk away from the man into a bear trap on the side of the road. The man comes running to you and u pull out your rifle in a panic.")
         print("You aim at the man telling him to stop and...")
-        roll()
+        roll2()
 
 
 second_action()
