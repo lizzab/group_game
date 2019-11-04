@@ -15,7 +15,7 @@ def roll():
     if die == 1 or 3 or 5:
         print("You missed your shot and you died!")
     else:
-        print("You hit your shot!")
+        print("You hit your shot! Congrats you didn't die!")
 
 
 print("Welcome to the B.J. Experience! The adventure game!")
@@ -79,7 +79,6 @@ def second_action():
         print("You walk away from the man into a bear trap on the side of the road. The man comes running to you and u pull out your rifle in a panic.")
         print("You aim at the man telling him to stop and...")
         roll()
-
 
 
 second_action()
