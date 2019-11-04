@@ -42,16 +42,18 @@ def first_action():
         print("You walk to the left fork and all you see is forrest for miles, until you hear a river flow.")
 
 
+first_action()
+
+# I got rid of the while function and combined the if statements
+
 def second_action():
     print("1.) Do you yell to the man to grab his attention or 2.) Do you run off into the woods to hide?")
     print("ENTER: ")
     choice2 = int(input())
-
-
-while second_action() == 1:
-    print("""You get the mans attention and he waves to you and walks a little faster than he was before.
-    He says that he needs help in his cabin in the woods, there is a bear near the cabin and his on is stuck in there.""")
-    print("1.) Do you help the man or 2.) Do you walk away?")
+    if choice2 == 1:
+        print("""You get the mans attention and he waves to you and walks a little faster than he was before.
+    He says that he needs help in his cabin in the woods, there is a bear near the cabin and his son is stuck in there.""")
+        print("1.) Do you help the man or 2.) Do you walk away?")
     choice2 = int(input())
     if choice2 == 1:
         print("You follow the man into the woods where you both spot the bear.")
@@ -65,4 +67,4 @@ while second_action() == 1:
         choice3 = int(input())
 
 
-first_action()
+second_action()
