@@ -65,7 +65,8 @@ def first_action():
     if choice == 1:
         print("You walk down the right fork about a quarter of a mile when you see a mysterious man headed your way.")
     elif choice == 2:
-        print("You walk to the left fork and all you see is forrest for miles, until you hear a river flow.")
+        print("""You walk to the left fork and all you see is forrest for miles, until you hear a river flow.
+        You look over the river and see a man walking towards you.""")
 
 
 first_action()
